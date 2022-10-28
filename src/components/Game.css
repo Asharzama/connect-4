@@ -87,3 +87,15 @@ body {
 .Footer button:hover {
   background-color: chocolate;
 }
+
+@media (max-width: 450px){
+  *{
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 350px) {
+  *{
+    font-size: 37.5%;
+  }
+}
