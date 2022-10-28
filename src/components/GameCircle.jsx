@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import "./Game.css";
 
-const GameCircle = () => {
+const GameCircle = (props) => {
+  const { id, children, onClicked, className } = props;
+
   return (
-    <div>GameCircle</div>
-  )
-}
+    <div className={`gameCircle ${className}`} onClick={() => onClicked(id)}>
+      {children}
+    </div>
+  );
+};
 
-export default GameCircle
+export default GameCircle;
